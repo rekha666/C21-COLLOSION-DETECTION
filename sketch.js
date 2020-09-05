@@ -47,3 +47,15 @@ function isTouching(object1,object2){
     return false;
   } 
 }
+function isTouching(object1,object3){
+  if (object1.x - object3.x < object3.width/2 + object1.width/2
+    && object3.x - object1.x < object3.width/2 + object1.width/2
+    && object1.y - object3.y < object3.height/2 + object1.height/2
+    && object3.y - object3.y < object3.height/2 + object1.height/2) {
+    
+    return true;
+  }
+  else {
+    return false;
+  } 
+}
